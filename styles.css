@@ -54,8 +54,17 @@ table {
     --white:#ffffff;
 }
 
+body{
+    background-color: var(--black);
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
 p{
     font-size: 1.25em;
+    color: var(--black);
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 figcaption, label, input, small{
@@ -64,12 +73,169 @@ figcaption, label, input, small{
 
 nav a{
     font-size: 1.5em;
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav li{
+    display: inline;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+nav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
 
 h1{
     font-size: 3em;
+    background-color: var(--white);
+    color:var(--teal);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 
 h2{
     font-size: 2em;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main{
+    background-color: var(--white);
+}
+
+figcaption{
+    text-align: center;
+    color: var(--black);
+}
+
+@media screen and (max-width: 3000px){
+    #pics{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+    }
+    nav{
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 880px){
+    #pics{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+    }
+
+    nav{
+        text-align: center;    
+    }
+}
+
+@media screen and (max-width: 485px){
+    #pics{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+    nav{
+        text-align: center;    
+    }
+}
+
+#contact h2{
+    color: var(--white);
+}
+
+#contact p{
+    color: var(--white);
+    text-align: center;
+}
+
+#contact{
+    text-align: center;
+}
+
+footer small{
+    color: var(--white);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+figcaption{
+    position: relative;
+    top:-30px;
+    color:var(--white);
+    text-transform: uppercase;
+}
+
+figure{
+    text-align: center;
+}
+
+#guat figcaption{
+    top: -270px;
+}
+
+#iran figcaption{
+    color: var(--black);
+    top: -620px;
+}
+
+#ire figcaption{
+    color: var(--black);
+    top: -620px;
+}
+
+#ital figcaption{
+    color: var(--black);
+}
+
+#rock figcaption{
+    top: -270px;
+    color: var(--black);
+}
+
+#swit figcaption{
+    top: -270px;
+    color: var(--black);
+}
+
+#uk figcaption{
+    top: -270px;
+    color: var(--black);
+}
+
+#us figcaption{
+    top: -270px;
+    color: var(--black);
+}
+
+#wyo figcaption{
+    top: -270px;
+}
+
+#contact{
+    color: var(--white);
+    padding:10px;
+}
+
+#contact input{
+    text-transform: uppercase;
+    color: var(--teal);
+    font-weight: bold;
+}
+
+#contact label{
+    text-transform: uppercase;
 }
